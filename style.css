@@ -6,14 +6,29 @@
 }
 
 body {
-  min-height: 100vh;
-  background:
-    linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
-    url("bg.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  color: #ffffff;
+    /* Define a imagem de fundo e o caminho para o arquivo */
+    background-image: url('bg.jpg'); 
+    
+    /* Garante que a imagem cubra toda a área do corpo */
+    background-size: cover; 
+    
+    /* Centraliza a imagem na tela */
+    background-position: center; 
+    
+    /* Impede que a imagem se repita */
+    background-repeat: no-repeat; 
+    
+    /* Define uma cor de fallback sólida caso a imagem não carregue */
+    background-color: #000000; 
+    
+    /* Define a cor do texto principal para branco para garantir legibilidade sobre o fundo escuro */
+    color: #ffffff; 
+    
+    /* Adicione outras configurações de fonte/layout aqui, se quiser */
+    font-family: Arial, sans-serif;
+    padding: 0;
+    margin: 0;
+    height: 100vh; /* Garante que o body ocupe 100% da altura da tela */
 }
 
 .container {
