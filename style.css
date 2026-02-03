@@ -29,7 +29,7 @@ body {
 }
 
 .logo img {
-    max-width: 150px;
+    max-width: 200px;
     opacity: 0.8; /* Efeito de marca d'água no logo */
     transition: opacity 0.3s;
     margin-bottom: 20px;
