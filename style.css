@@ -22,11 +22,16 @@
 /* 3. Estilos Gerais */
 body {
     font-family: var(--font-family);
-    background-color: var(--bg-color);
+    background-image: url('bn.jpg'); 
+    background-size: cover;          
+    background-position: center;   
+    background-attachment: fixed;    
     color: var(--text-color);
     line-height: 1.6;
     padding: 20px;
+    margin: 0;
 }
+
 
 /* 4. Estilizacao de Inputs e Forms */
 input[type="text"],
