@@ -29,8 +29,8 @@ header {
     text-align: center;
 }
 
-/* Estilo para o Logotipo (logo.png ou BN.png) */
-.logo {
+/* Estilo para o fundo pagina (BN.png) */
+.bn {
     max-width: 250px; 
     height: auto;
     display: block;
@@ -60,10 +60,11 @@ h1, h2 {
 
 /* ESTILO DO BANNER COM IMAGEM DE FUNDO AZUL (BN.png) */
 .banner-principal {
-    background-image: url('BN.png'); 
+    /*'BN.png' */
+    background-image: url('BN.jpg'); 
     background-size: cover;      
     background-position: center; 
-    height: 400px;               
+    height: 400px; /* Garante que a div tenha altura para a imagem aparecer */             
     display: flex;               
     flex-direction: column;
     align-items: center;
