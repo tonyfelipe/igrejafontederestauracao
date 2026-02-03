@@ -22,7 +22,6 @@ body {
     overflow: hidden;
 }
 
-/* Header Humano e Acolhedor */
 header {
     background: #ffffff;
     padding: 20px 0;
@@ -30,12 +29,19 @@ header {
     text-align: center;
 }
 
-/* Tipografia que o Google gosta (Hierarquia Clara) */
+/* Estilo para o Logotipo (logo.png ou BN.jpg) */
+.logo {
+    max-width: 250px; 
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    padding: 10px 0;
+}
+
 h1, h2 {
     color: var(--primary-color);
 }
 
-/* Botão de Chamada para Ação (Call to Action) */
 .btn-visita {
     display: inline-block;
     background: var(--accent-color);
@@ -45,13 +51,76 @@ h1, h2 {
     border-radius: 5px;
     font-weight: bold;
     transition: 0.3s;
+    margin-bottom: 20px;
 }
 
 .btn-visita:hover {
     background: #d35400;
 }
 
-/* Responsividade Básica */
+/* ESTILO DO BANNER COM IMAGEM DE FUNDO AZUL (BN.jpg) */
+.banner-principal {
+    background-image: url('BN.jpg'); 
+    background-size: cover;      
+    background-position: center; 
+    height: 400px;               
+    display: flex;               
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;                
+    background-blend-mode: overlay; 
+    background-color: rgba(0, 0, 0, 0.5); 
+    margin-top: 20px;
+    border-radius: 8px;
+}
+
+/* Seção de Transmissão ao Vivo */
+.secao-live {
+    background-color: #e74c3c; 
+    color: white;
+    padding: 30px;
+    border-radius: 8px;
+    margin: 40px 0; 
+    text-align: center;
+}
+
+.btn-live {
+    display: inline-block;
+    background: #c0392b;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+/* Seção Oração do Dia */
+.secao-oracao {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 8px;
+    margin: 40px 0;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+blockquote {
+    font-size: 1.2em;
+    font-style: italic;
+    border-left: 5px solid var(--accent-color);
+    padding-left: 20px;
+    margin: 15px 0;
+}
+
+.autor {
+    text-align: right;
+    font-weight: bold;
+}
+
+
+/* Responsividade Básica (móvel primeiro) */
 @media(max-width: 768px) {
     .container {
         width: 95%;
