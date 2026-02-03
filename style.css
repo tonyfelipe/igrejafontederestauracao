@@ -29,7 +29,7 @@ header {
     text-align: center;
 }
 
-/* Estilo para o Logotipo (logo.png ou BN.jpg) */
+/* Estilo para o Logotipo (logo.png ou BN.png) */
 .logo {
     max-width: 250px; 
     height: auto;
@@ -58,9 +58,9 @@ h1, h2 {
     background: #d35400;
 }
 
-/* ESTILO DO BANNER COM IMAGEM DE FUNDO AZUL (BN.jpg) */
+/* ESTILO DO BANNER COM IMAGEM DE FUNDO AZUL (BN.png) */
 .banner-principal {
-    background-image: url('BN.jpg'); 
+    background-image: url('BN.png'); 
     background-size: cover;      
     background-position: center; 
     height: 400px;               
