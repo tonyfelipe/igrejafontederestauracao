@@ -6,7 +6,7 @@
     --bg-light: #f4f7f6;
 }
 
-BN.pgn {
+bn.jpeg {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1.6;
     color: var(--text-color);
@@ -29,7 +29,7 @@ header {
     text-align: center;
 }
 
-/* Estilo para o fundo pagina (BN.png) */
+/* Estilo para o fundo pagina (bn.jpeg) */
 .bn {
     max-width: 250px; 
     height: auto;
@@ -58,10 +58,10 @@ h1, h2 {
     background: #d35400;
 }
 
-/* ESTILO DO BANNER COM IMAGEM DE FUNDO AZUL (BN.png) */
+/* ESTILO DO BANNER COM IMAGEM DE FUNDO AZUL (bn.jpeg) */
 .banner-principal {
-    /*'BN.png' */
-    background-image: url('BN.jpg'); 
+    /*'bn.jpeg' */
+    background-image: url('bn.jpeg'); 
     background-size: cover;      
     background-position: center; 
     height: 400px; /* Garante que a div tenha altura para a imagem aparecer */             
