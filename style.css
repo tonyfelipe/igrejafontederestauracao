@@ -1,30 +1,81 @@
-html, body {
+/* =========================================
+   style.css - Raiz do Projeto
+   ========================================= */
+
+/* 1. Reset CSS Basico (padroniza comportamentos) */
+*, *::before, *::after {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+}
+
+/* 2. Definicao de Variaveis (Facilita a manutencao) */
+:root {
+    --primary-color: #007bff;
+    --secondary-color: #6c757d;
+    --bg-color: #f4f4f9;
+    --text-color: #333;
+    --border-color: #ccc;
+    --font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* 3. Estilos Gerais */
+body {
+    font-family: var(--font-family);
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    line-height: 1.6;
+    padding: 20px;
+}
+
+/* 4. Estilizacao de Inputs e Forms */
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="number"],
+input[type="tel"],
+select,
+textarea {
     width: 100%;
-    height: 100%;
+    padding: 12px 15px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid var(--border-color);
+    border-radius: 6px;
+    box-shadow: inset 0 1px 3px rgba(0,0,0,0.1);
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    font-size: 16px;
 }
 
- body {
-    background-image: url(/imagens/bn.jpg).
-    background-size: cover;
-    background-position: center;
+/* Efeito de foco no input (Acessibilidade) */
+input:focus {
+    outline: none;
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.2);
 }
 
-
-.container {
-    text-align: center;
-    padding-top: 60px;
-    background-color: rgba(0,0,0,0.55);
-    min-height: 100vh;
+/* Estilizacao especifica para botao */
+input[type="submit"],
+button {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
 }
 
-.logo {
-    width: 60px;
-    margin-bottom: 10px;
+input[type="submit"]:hover,
+button:hover {
+    background-color: #0056b3;
 }
 
-.endereco {
-    margin-top: 30px;
-    font-size: 14px;
-}
+/* Label style */
+label {
+    display: block;
+    margin-top: 15px;
+    font-weight: bold;
+    color: #555;
